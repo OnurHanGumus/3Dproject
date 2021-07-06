@@ -6,7 +6,7 @@ public class RotateSc : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]
-    int speedValue = 10;
+    int speed = 10;
     void Start()
     {
         
@@ -15,6 +15,6 @@ public class RotateSc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.up* speedValue * Time.deltaTime);
+        transform.Rotate(Vector3.up* speed * Time.deltaTime);
     }
 }
