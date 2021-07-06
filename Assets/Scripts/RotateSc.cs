@@ -6,7 +6,7 @@ public class RotateSc : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]
-    int speed = 10;
+    int speedValue = 10;
     void Start()
     {
         
