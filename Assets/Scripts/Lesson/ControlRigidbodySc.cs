@@ -7,7 +7,7 @@ namespace Lessons
     public class ControlRigidbodySc : MonoBehaviour
     {
         [SerializeField]
-        Vector3 jumpForce;
+        ControlRigidbodySet controlRigidbody;
         Rigidbody rig;
 
         void Start()
@@ -20,7 +20,7 @@ namespace Lessons
             bool spaceDown = Input.GetButtonDown("Jump");
             if (spaceDown)
             {
-                rig.AddForce(jumpForce, ForceMode.Impulse);
+                rig.AddForce(controlRigidbody.JumpForce, ForceMode.Impulse);
             }
 
         }

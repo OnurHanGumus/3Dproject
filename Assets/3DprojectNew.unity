@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b924690677672458de34afa8777a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: {x: 0, y: 20, z: 0}
+  controlRigidbody: {fileID: 11400000, guid: fcad8944e53cfe64fad5838247664799, type: 2}
 --- !u!1 &1054249228
 GameObject:
   m_ObjectHideFlags: 0
