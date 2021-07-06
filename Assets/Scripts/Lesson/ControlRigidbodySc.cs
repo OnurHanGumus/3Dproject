@@ -2,24 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlRigidbodySc : MonoBehaviour
+namespace Lessons
 {
-    [SerializeField]
-    Vector3 jumpForce;
-    Rigidbody rig;
-
-    void Start()
+    public class ControlRigidbodySc : MonoBehaviour
     {
-        rig = GetComponent<Rigidbody>();
-    }
+        [SerializeField]
+        Vector3 jumpForce;
+        Rigidbody rig;
 
-   void Update()
-    {
-        bool spaceDown = Input.GetButtonDown("Jump") ;
-        if (spaceDown)
+        void Start()
         {
-            rig.AddForce(jumpForce,ForceMode.Impulse);
+            rig = GetComponent<Rigidbody>();
         }
 
+        void Update()
+        {
+            bool spaceDown = Input.GetButtonDown("Jump");
+            if (spaceDown)
+            {
+                rig.AddForce(jumpForce, ForceMode.Impulse);
+            }
+
+        }
     }
+
 }
+

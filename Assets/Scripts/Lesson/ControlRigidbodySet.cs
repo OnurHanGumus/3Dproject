@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlRigidbodySet : ScriptableObject
+namespace Lessons
 {
-   
+    [CreateAssetMenu(menuName = "Lessons/Lessons1/Rotate Settings")]
+    public class ControlRigidbodySet : ScriptableObject
+    {
+
+    }
+
 }
