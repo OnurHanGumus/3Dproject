@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TopDownShooter
+namespace TopDownShooter.Camera
 {
 
     [CreateAssetMenu(menuName = "Lessons/Lessons1/CameraController Settings")]
