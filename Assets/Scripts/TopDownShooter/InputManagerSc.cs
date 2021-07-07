@@ -6,8 +6,7 @@ namespace TopDownShooter.UserInput
 {
     public class InputManagerSc : MonoBehaviour
     {
-        [SerializeField]
-        float horizontal, vertical;
+    
         [SerializeField]
         InputManagerSet inputManagerSet;
         void Start()
@@ -19,6 +18,7 @@ namespace TopDownShooter.UserInput
         {
             inputManagerSet.Horizontal = Input.GetAxis("Horizontal");
             inputManagerSet.Vertical = Input.GetAxis("Vertical");
+            inputManagerSet.Jump = Input.GetAxis("Jump");
         }
     }
 

@@ -138,8 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add2a16681f453046bfd5df70aff0e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontal: 0
-  vertical: 0
   inputManagerSet: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
 --- !u!1 &243305952
 GameObject:
@@ -935,6 +933,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003658695, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224097224, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}
+      propertyPath: inputData
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 224097224, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32,
+        type: 2}
+    - target: {fileID: 224097224, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}

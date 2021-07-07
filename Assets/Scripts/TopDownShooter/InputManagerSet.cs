@@ -26,6 +26,16 @@ namespace TopDownShooter.UserInput
             set { vertical = value; }
         }
 
+        [SerializeField]
+        private float jump;
+
+        public float Jump
+        {
+            get { return jump; }
+            set { jump = value; }
+        }
+
+
     }
 
 }

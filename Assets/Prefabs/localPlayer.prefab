@@ -91,7 +91,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003658691}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1094115fc90631a4e95a9bceefc2958c, type: 3}
   m_Name: 
@@ -349,8 +349,8 @@ GameObject:
   - component: {fileID: 589994125901925719}
   - component: {fileID: 3303330120521588108}
   - component: {fileID: 6335167067798340214}
-  - component: {fileID: 7922311742153903739}
   - component: {fileID: 3165966375828781943}
+  - component: {fileID: 224097224}
   - component: {fileID: 224097217}
   m_Layer: 0
   m_Name: localPlayer
@@ -439,19 +439,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9107852, y: 1.899977, z: 2.6642036}
   m_Center: {x: 0.00000035762787, y: 0.18778718, z: -0.038929224}
---- !u!114 &7922311742153903739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5182399290245215767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63b924690677672458de34afa8777a5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controlRigidbody: {fileID: 11400000, guid: fcad8944e53cfe64fad5838247664799, type: 2}
 --- !u!54 &3165966375828781943
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -460,14 +447,29 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5182399290245215767}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
+  m_Mass: 100
+  m_Drag: 10
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &224097224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182399290245215767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f7ad0bdcf3f57549a5c88b663718049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rig: {fileID: 0}
+  inputManager: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
+  playerMovementSet: {fileID: 11400000, guid: d33ef9220cb6d324e9ce5afb152a6039, type: 2}
 --- !u!114 &224097217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,8 +482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add2a16681f453046bfd5df70aff0e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontal: 0
-  vertical: 0
   inputManagerSet: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
 --- !u!1 &6156133125780198662
 GameObject:
