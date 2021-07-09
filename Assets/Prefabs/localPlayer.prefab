@@ -1,5 +1,88 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &192189773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 192189774}
+  - component: {fileID: 192189776}
+  - component: {fileID: 192189775}
+  m_Layer: 9
+  m_Name: CameraEnvironment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &192189774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192189773}
+  m_LocalRotation: {x: 0.045807615, y: 0, z: 0, w: 0.9989503}
+  m_LocalPosition: {x: 0.28988326, y: 2.7900002, z: -7.3009067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6827244690776129958}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 5.251, y: 0, z: 0}
+--- !u!20 &192189776
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192189773}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -5
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 256
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &192189775
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192189773}
+  m_Enabled: 1
 --- !u!1 &2003658691
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,8 +95,8 @@ GameObject:
   - component: {fileID: 2003658693}
   - component: {fileID: 2003658692}
   - component: {fileID: 2003658695}
-  m_Layer: 0
-  m_Name: Main Camera
+  m_Layer: 9
+  m_Name: CameraTank
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +125,7 @@ Camera:
   m_GameObject: {fileID: 2003658691}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 3
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -64,7 +147,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -110,7 +193,7 @@ GameObject:
   - component: {fileID: 8312131619737944035}
   - component: {fileID: 8471754643061795771}
   - component: {fileID: 5816403495432912678}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Wheel_f_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +272,7 @@ GameObject:
   - component: {fileID: 589610109758076401}
   - component: {fileID: 1819538343282574463}
   - component: {fileID: 3036058658360079763}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Wheel_b_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +351,7 @@ GameObject:
   - component: {fileID: 6522043053207447910}
   - component: {fileID: 6098456982956651941}
   - component: {fileID: 1271996578486841474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Wheel_f_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +435,7 @@ GameObject:
   - component: {fileID: 3165966375828781943}
   - component: {fileID: 224097224}
   - component: {fileID: 224097217}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: localPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,6 +459,7 @@ Transform:
   - {fileID: 6522043053207447910}
   - {fileID: 8312131619737944035}
   - {fileID: 2003658694}
+  - {fileID: 192189774}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -494,7 +578,7 @@ GameObject:
   - component: {fileID: 7769061224653893038}
   - component: {fileID: 5145298068513759799}
   - component: {fileID: 3469657852931377797}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +658,7 @@ GameObject:
   - component: {fileID: 5755211731604339720}
   - component: {fileID: 5341453910945931028}
   - component: {fileID: 6102608600215109154}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +737,7 @@ GameObject:
   - component: {fileID: 4976847485854347935}
   - component: {fileID: 3230777635816718500}
   - component: {fileID: 473793997301207270}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFree_Wheel_b_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

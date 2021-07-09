@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 1101188730}
   - component: {fileID: 1101188729}
   - component: {fileID: 1101188728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,18 +915,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3165966375828781943, guid: d30fcaa4635d3ea4bab20c9baad78516,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224097217, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: 2003658693, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}
+      propertyPath: m_projectionMatrixMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224097224, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 2003658693, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}
+      propertyPath: field of view
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d30fcaa4635d3ea4bab20c9baad78516, type: 3}
