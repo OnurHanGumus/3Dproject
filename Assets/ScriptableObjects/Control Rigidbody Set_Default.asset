@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3404419a3dac04599372c5ac78c8cc, type: 3}
   m_Name: Control Rigidbody Set_Default
   m_EditorClassIdentifier: 
-  jumpForce: {x: 0, y: 3.07, z: 0}
+  jumpForce: {x: 0, y: 22.14, z: 0}
