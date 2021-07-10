@@ -9,14 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f30af5fa10f5642a70320be542a72a, type: 3}
-  m_Name: Input Manager Set
+  m_Script: {fileID: 11500000, guid: 30d7c86ab1e32f140a22e9443bdcb6c7, type: 3}
+  m_Name: Tower Rotation Set
   m_EditorClassIdentifier: 
-  horizontal: 0
-  vertical: 0
-  jump: 0
-  _axisActive: 1
-  _keybaseHorizontalActive: 1
-  positiveHorizontalKeyCode: 113
-  negativeHorizontalKeyCode: 101
-  _increaseAmount: 0.015
+  towerRotationSpeed: 5

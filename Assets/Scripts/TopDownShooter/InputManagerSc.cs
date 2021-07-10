@@ -9,6 +9,8 @@ namespace TopDownShooter.UserInput
     
         [SerializeField]
         InputManagerSet inputManagerSet;
+
+        [SerializeField] InputManagerSet[] inputManagerArray;
         void Start()
         {
 
@@ -19,6 +21,11 @@ namespace TopDownShooter.UserInput
             inputManagerSet.Horizontal = Input.GetAxis("Horizontal");
             inputManagerSet.Vertical = Input.GetAxis("Vertical");
             inputManagerSet.Jump = Input.GetAxis("Jump");
+
+            for (int i = 0; i < inputManagerArray.Length; i++)
+            {
+                inputManagerArray[i].ProcessInput();
+            }
         }
     }
 
