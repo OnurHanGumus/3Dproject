@@ -25,12 +25,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192189773}
-  m_LocalRotation: {x: 0.045807615, y: 0, z: 0, w: 0.9989503}
-  m_LocalPosition: {x: 0.28988326, y: 2.7900002, z: -7.3009067}
+  m_LocalRotation: {x: -0.00000094622374, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6827244690776129958}
-  m_RootOrder: 6
+  m_Father: {fileID: 2003658694}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 5.251, y: 0, z: 0}
 --- !u!20 &192189776
 Camera:
@@ -82,7 +82,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192189773}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &2003658691
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +112,8 @@ Transform:
   m_LocalRotation: {x: 0.04580856, y: -0, z: -0, w: 0.99895024}
   m_LocalPosition: {x: 0.28988326, y: 2.7900002, z: -7.3009067}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 192189774}
   m_Father: {fileID: 6827244690776129958}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 5.2510004, y: 0, z: 0}
@@ -174,14 +175,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003658691}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1094115fc90631a4e95a9bceefc2958c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraControllerSet: {fileID: 11400000, guid: bd251995d3e7d8045a17eb254c1d4a16,
     type: 2}
-  targetTransform: {fileID: 6827244690776129958}
+  targetTransform: {fileID: 7769061224653893038}
 --- !u!1 &2026696318494384516
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +436,7 @@ GameObject:
   - component: {fileID: 3165966375828781943}
   - component: {fileID: 224097224}
   - component: {fileID: 224097217}
+  - component: {fileID: 1515136202}
   m_Layer: 9
   m_Name: localPlayer
   m_TagString: Untagged
@@ -459,7 +461,6 @@ Transform:
   - {fileID: 6522043053207447910}
   - {fileID: 8312131619737944035}
   - {fileID: 2003658694}
-  - {fileID: 192189774}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -554,6 +555,7 @@ MonoBehaviour:
   rig: {fileID: 0}
   inputManager: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
   playerMovementSet: {fileID: 11400000, guid: d33ef9220cb6d324e9ce5afb152a6039, type: 2}
+  targetTransform: {fileID: 6827244690776129958}
 --- !u!114 &224097217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,6 +569,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputManagerSet: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
+  inputManagerArray:
+  - {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
+--- !u!114 &1515136202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182399290245215767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed56ac94108308d42869fe803373916c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputManagerSet: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
+  towerRotationSet: {fileID: 11400000, guid: e051756dbc50df34fadd7b2f2e531ff8, type: 2}
+  towerTransform: {fileID: 7769061224653893038}
 --- !u!1 &6156133125780198662
 GameObject:
   m_ObjectHideFlags: 0
