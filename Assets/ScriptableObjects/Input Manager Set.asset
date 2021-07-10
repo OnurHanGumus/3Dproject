@@ -15,8 +15,8 @@ MonoBehaviour:
   horizontal: 0
   vertical: 0
   jump: 0
-  _axisActive: 1
+  _axisActive: 0
   _keybaseHorizontalActive: 1
-  positiveHorizontalKeyCode: 113
-  negativeHorizontalKeyCode: 101
+  positiveHorizontalKeyCode: 101
+  negativeHorizontalKeyCode: 113
   _increaseAmount: 0.015

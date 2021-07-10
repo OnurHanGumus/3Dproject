@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb75d7f6ebe0f8840bc78f5ec35a5d53, type: 3}
   m_Name: Camera Controller Set
   m_EditorClassIdentifier: 
-  rotationSpeed: 1
-  offset: {x: 0, y: 2, z: -6.98}
-  positionLerp: 1
+  rotationSpeed: 100
+  offset: {x: 0, y: 2.9, z: -7.86}
+  positionLerp: 1000
