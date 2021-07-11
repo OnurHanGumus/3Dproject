@@ -21,15 +21,16 @@ namespace TopDownShooter.Camera
         void CameraRotate()
         {
 
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(targetTransform.position - transform.position), Time.deltaTime * cameraControllerSet.RotationSpeed);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(targetTransform.forward), Time.deltaTime * cameraControllerSet.RotationSpeed);
 
 
         }
 
         void CameraFollow()
         {
-
-            transform.position = Vector3.Lerp(transform.position, targetTransform.position + cameraControllerSet.Offset, Time.deltaTime * cameraControllerSet.PositionLerp);
+            Vector3 offset = (transform.right * cameraControllerSet.Offset.x) + (transform.up * cameraControllerSet.Offset.y)
+                + (transform.forward * cameraControllerSet.Offset.z);
+            transform.position = Vector3.Lerp(transform.position, targetTransform.position + offset, Time.deltaTime * cameraControllerSet.PositionLerp);
 
 
         }
