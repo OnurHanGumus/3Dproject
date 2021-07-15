@@ -24,7 +24,8 @@ namespace TopDownShooter.PlayerMovement
         {
             rig.MovePosition(rig.position + (rig.transform.forward * inputManager.Vertical * playerMovementSet.VerticalSpeed));
             //rig.MovePosition(rig.position+(rig.transform.right * inputManager.Horizontal* playerMovementSet.HorizontalSpeed));
-            targetTransform.Rotate(0,inputManager.Horizontal * playerMovementSet.HorizontalSpeed,0,Space.Self);
+            targetTransform.Rotate(0,inputManager.Horizontal * playerMovementSet.HorizontalSpeed*inputManager.Vertical, 0,Space.Self);
+            //Debug.Log((int)inputManager.Vertical);
             rig.AddForce(rig.transform.up * playerMovementSet.JumpSpeed.y*inputManager.Jump, ForceMode.Impulse);
         }
 

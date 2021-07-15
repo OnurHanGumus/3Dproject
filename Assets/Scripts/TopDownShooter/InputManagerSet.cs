@@ -14,7 +14,7 @@ namespace TopDownShooter.UserInput
         public float Horizontal
         {
             get { return horizontal; }
-            set { horizontal = value; }
+            set { horizontal =  value; }
         }
 
         [SerializeField]
@@ -53,11 +53,11 @@ namespace TopDownShooter.UserInput
 
         [Header("Key base control")]
         [SerializeField] private bool _keybaseHorizontalActive =false;
-        private bool _keybaseVerticalActive = false;
-        [SerializeField] private KeyCode positiveHorizontalKeyCode;
-        private KeyCode positiveVerticalKeyCode;
-        [SerializeField] private KeyCode negativeHorizontalKeyCode;
-        private KeyCode negativeVerticalKeyCode;
+        [SerializeField] private bool _keybaseVerticalActive = false;
+        [SerializeField] private KeyCode positiveHorizontalKeyCode;//E inspectordan atandı.
+        private KeyCode positiveVerticalKeyCode = KeyCode.W;
+        [SerializeField] private KeyCode negativeHorizontalKeyCode;//Q
+        private KeyCode negativeVerticalKeyCode = KeyCode.S;
         [SerializeField] private float _increaseAmount = 0.015f;
 
 
