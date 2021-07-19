@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb75d7f6ebe0f8840bc78f5ec35a5d53, type: 3}
-  m_Name: Camera Controller Set
+  m_Script: {fileID: 11500000, guid: 3211fc6c3e88db64c9d724fb4ddc6239, type: 3}
+  m_Name: Wheel Rotate Set
   m_EditorClassIdentifier: 
-  rotationSpeed: 100
-  offset: {x: 0, y: 1.44, z: -6.41}
-  positionLerp: 0.5
+  wheelRollingSpeed: 11.41
+  wheelRotationSpeed: 1
