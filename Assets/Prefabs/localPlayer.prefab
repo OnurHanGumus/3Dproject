@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 8312131619737944035}
   - component: {fileID: 8471754643061795771}
   - component: {fileID: 5816403495432912678}
+  - component: {fileID: 1429840041}
   m_Layer: 9
   m_Name: TankFree_Wheel_f_right
   m_TagString: Untagged
@@ -270,7 +271,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026696318494384516}
-  m_LocalRotation: {x: 5.3530965e-24, y: 0.000000087422784, z: -3.8213714e-15, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -324,6 +325,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1429840041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026696318494384516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5baf9e320d1b8974ca5e46027a5a711d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputManagerSet: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
+  wheelRotateSet: {fileID: 11400000, guid: 4ccee9c19a7b757439d3fe8c71ddf55d, type: 2}
+  oneOfFrontWheel: {fileID: 3729518670519871865}
 --- !u!1 &4541142658443817623
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +351,7 @@ GameObject:
   - component: {fileID: 589610109758076401}
   - component: {fileID: 1819538343282574463}
   - component: {fileID: 3036058658360079763}
+  - component: {fileID: 1741469657}
   m_Layer: 9
   m_Name: TankFree_Wheel_b_right
   m_TagString: Untagged
@@ -349,13 +366,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4541142658443817623}
-  m_LocalRotation: {x: 5.3530965e-24, y: 0.000000087422784, z: -3.8213714e-15, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0000001872535, w: 1}
   m_LocalPosition: {x: 0.78180045, y: -0.3376054, z: -0.5722885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6827244690776129958}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.000015258789}
 --- !u!33 &1819538343282574463
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -403,6 +420,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1741469657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541142658443817623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5baf9e320d1b8974ca5e46027a5a711d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputManagerSet: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
+  wheelRotateSet: {fileID: 11400000, guid: 4ccee9c19a7b757439d3fe8c71ddf55d, type: 2}
+  oneOfFrontWheel: {fileID: 0}
 --- !u!1 &4940000347937549711
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +446,7 @@ GameObject:
   - component: {fileID: 6522043053207447910}
   - component: {fileID: 6098456982956651941}
   - component: {fileID: 1271996578486841474}
+  - component: {fileID: 802235096}
   m_Layer: 9
   m_Name: TankFree_Wheel_f_left
   m_TagString: Untagged
@@ -428,8 +461,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4940000347937549711}
-  m_LocalRotation: {x: -0.00000004371139, y: 0.000000043711395, z: 0.00000004371139,
-    w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -483,6 +515,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &802235096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940000347937549711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5baf9e320d1b8974ca5e46027a5a711d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputManagerSet: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
+  wheelRotateSet: {fileID: 11400000, guid: 4ccee9c19a7b757439d3fe8c71ddf55d, type: 2}
+  oneOfFrontWheel: {fileID: 2301215677035326792}
 --- !u!1 &5182399290245215767
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +546,7 @@ GameObject:
   - component: {fileID: 224097224}
   - component: {fileID: 224097217}
   - component: {fileID: 1515136202}
+  - component: {fileID: 2046336648}
   m_Layer: 9
   m_Name: localPlayer
   m_TagString: Untagged
@@ -647,6 +695,20 @@ MonoBehaviour:
   inputManagerSet: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
   towerRotationSet: {fileID: 11400000, guid: e051756dbc50df34fadd7b2f2e531ff8, type: 2}
   towerTransform: {fileID: 7769061224653893038}
+--- !u!114 &2046336648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182399290245215767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7d7d45d02386d945b1bff075a4ee214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _abstractPlayerInventoryArray: []
+  Parent: {fileID: 0}
 --- !u!1 &6156133125780198662
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +880,7 @@ GameObject:
   - component: {fileID: 4976847485854347935}
   - component: {fileID: 3230777635816718500}
   - component: {fileID: 473793997301207270}
+  - component: {fileID: 194637804}
   m_Layer: 9
   m_Name: TankFree_Wheel_b_left
   m_TagString: Untagged
@@ -832,8 +895,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8703381792109794505}
-  m_LocalRotation: {x: -7.137552e-15, y: 0.000000087422784, z: -0.00000008742279,
-    w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.78152126, y: -0.3376054, z: -0.57228816}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -887,3 +949,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &194637804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8703381792109794505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5baf9e320d1b8974ca5e46027a5a711d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputManagerSet: {fileID: 11400000, guid: 1a2db92d5b6fc0e49acd19a8b7a55f32, type: 2}
+  wheelRotateSet: {fileID: 11400000, guid: 4ccee9c19a7b757439d3fe8c71ddf55d, type: 2}
+  oneOfFrontWheel: {fileID: 0}

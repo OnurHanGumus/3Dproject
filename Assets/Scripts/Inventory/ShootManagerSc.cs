@@ -6,12 +6,18 @@ namespace TopDownShooter.Inventory
 {
     [CreateAssetMenu(menuName = "Lessons/Lessons1/scriptableShootManager ItemData")]
 
-    public class ScriptableShootManagerSc : AbstractScriptableManagerSc<ScriptableShootManagerSc>
+    public class ShootManagerSc : AbstractScriptableManagerSc<ShootManagerSc>
    {
-       public void Shoot()
+       public void Shoot(Vector3 origin, Vector3 direction)
         {
-            
-            Debug.Log("Shoot Activated");
+            RaycastHit raycast;
+            var physic = Physics.Raycast(origin, direction, out raycast);
+            if (physic)
+            {
+                Debug.Log("collider: "+ raycast.collider.name);
+
+
+            }
 
         }
 

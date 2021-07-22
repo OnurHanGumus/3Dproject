@@ -20,7 +20,11 @@ namespace TopDownShooter.PlayerMovement
         // Update is called once per frame
         void Update()
         {
-            towerTransform.Rotate(0,inputManagerSet.HorizontalTower*towerRotationSet.towerRotationSpeed,0,Space.Self);
+            if (towerTransform!=null)
+            {
+                towerTransform.Rotate(0, inputManagerSet.HorizontalTower * towerRotationSet.towerRotationSpeed, 0, Space.Self);
+
+            }
         }
     }
  
