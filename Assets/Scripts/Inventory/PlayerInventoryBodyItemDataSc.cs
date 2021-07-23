@@ -9,7 +9,7 @@ namespace TopDownShooter.Inventory
 
     public class PlayerInventoryBodyItemDataSc : AbstractPlayerInventoryItemData<PlayerInventoryBodyMONO>
     {
-        public override void CreateIntoInventory(PlayerInventorySc playerInventorySc)
+        public override void Initialize(PlayerInventorySc playerInventorySc)
         {
             var instantiated = InstantiatePrefabIntoParent(playerInventorySc.Parent);
             Debug.Log("THis class Body of Player");

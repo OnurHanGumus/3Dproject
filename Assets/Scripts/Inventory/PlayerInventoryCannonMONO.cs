@@ -10,7 +10,7 @@ namespace TopDownShooter.Inventory
        public void Shoot()
         {
             ShootManagerSc.instance.Shoot(cannonShootPoint.position,cannonShootPoint.forward);
-
+            Debug.Log("shooted");
         }
     }
 
